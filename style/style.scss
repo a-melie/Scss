@@ -1,0 +1,36 @@
+$orange-background: #ff5f01;
+$gold:  #ffdd00;
+$black: #00000;
+
+nav{
+  background-color: $orange-background;
+}
+footer{
+  background-color: $orange-background;
+}
+
+@mixin ring ($size, $color) {
+  width: $size;
+  height: $size;
+  margin-top:5px;
+  border: solid $color $size/10;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow : $size/50 $size/50 $size/20 lighten($color, 40);
+  vertical-align: middle;
+}
+
+@for $i from 1 through 6 {
+  .ring-#{$i} {
+    @include ring(30px + $i*6, $black);
+    margin-left:-20px -$i;
+  }
+}
+
+.smallRing {
+  @include ring(40px, $orange-background);
+}
+
+.bigRing {
+  @include ring(180px, $gold);
+}
