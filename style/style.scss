@@ -1,12 +1,25 @@
 $orange-background: #ff5f01;
 $gold:  #ffdd00;
-$black: #00000;
+$black: #000000;
+$white: #ffffff;
 
 nav{
   background-color: $orange-background;
 }
 footer{
   background-color: $orange-background;
+}
+ul {
+  li {
+    list-style-type:none;
+    a {
+      color :$white ;
+      &:hover {
+        text-decoration: none;
+        color : $white;
+      }
+    }
+  }
 }
 
 @mixin ring ($size, $color) {
@@ -16,7 +29,7 @@ footer{
   border: solid $color $size/10;
   border-radius: 50%;
   display: inline-block;
-  box-shadow : $size/50 $size/50 $size/20 lighten($color, 40);
+  box-shadow : $size/50 $size/50 $size/20 lighten($color, 30);
   vertical-align: middle;
 }
 
@@ -34,3 +47,4 @@ footer{
 .bigRing {
   @include ring(180px, $gold);
 }
+

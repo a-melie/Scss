@@ -6,6 +6,17 @@ footer {
     background-color: #ff5f01;
 }
 
+ul li {
+    list-style-type: none;
+}
+ul li a {
+    color: #ffffff;
+}
+ul li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .ring-1 {
     width: 36px;
     height: 36px;
@@ -98,68 +109,4 @@ footer {
     display: inline-block;
     box-shadow: 3.6px 3.6px 9px #fff199;
     vertical-align: middle;
-}
-
-
-
-body{
-    margin:auto;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/*Navbar*/
-li{
-    list-style: none;
-    color:white;
-    padding: 10px;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-.navbar{
-    padding-left: 10px;
-    padding: 5px;
-    margin: 0px;
-    display: flex;
-}
-
-}
-/*Fellows*/
-.middle{
-    text-align: center;
-}
-.small-text{
-    display: inline-block;
-    font-size: 20px;
-    font-weight: normal;
-}
-
-
-
-
-/*Footer*/
-.footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-}
-
-.left-footer {
-    display: flex;
-}
-
-/*Ecran inf 961px*/
-
-@media only screen and (max-width: 961px){
-    .footer, .left-footer{
-        display: inline-block;
-        text-align: center;
-    }
-    .middle{
-        font-size: 1.5em;
-        margin: 2rem 0 2rem 0;
-    }
 }
